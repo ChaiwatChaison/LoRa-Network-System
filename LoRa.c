@@ -77,7 +77,7 @@ void sendToThingSpeak(int rssiValue, int packetSize) {
     } else {
       Serial.print("Error sending data to ThingSpeak. HTTP Code: ");
       Serial.println(httpCode);
-    }
+    } 
 
     String payload = http.getString();  // รับข้อความตอบกลับจาก ThingSpeak
     Serial.println(payload);  // แสดงข้อความตอบกลับ
